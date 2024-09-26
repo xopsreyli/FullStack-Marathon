@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">New Avenger application</h1>
+    <div class="request">
+        <h3 class="req-method">POST</h3>
+        <span>Array</span>
+        <div class="req-box">
+            <p>{</p>
+            <p class="req-value">[ name ] => </p>
+            <p class="req-value">[ email ] => </p>
+            <p class="req-value">[ age ] => </p>
+            <p class="req-value">[ description ] => </p>
+            <p class="req-value">[ photo ] => </p>
+            <p>}</p>
+        </div>
+    </div>
+    <form id="candidate-form">
+        <div class="form-box">
+            <span class="form-title">About candidate</span>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Tell your name" required>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Tell your e-mail" required>
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div>
+                <label for="about">About</label>
+                <textarea name="about" id="about" cols="80" rows="7" maxlength="500" required></textarea>
+            </div>
+            <div>
+                <label for="photo">Your photo:</label>
+                <input type="file" id="photo" name="photo" required>
+            </div>
+        </div>
+        <button type="reset">CLEAR</button>
+        <button type="submit">SEND</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

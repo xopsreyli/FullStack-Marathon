@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #output div {
+            display: none;
+        }
+    </style>
+    <h1>Charset</h1>
+    <form id="form">
+        <div>
+            <label for="string">Change charset: </label>
+            <input type="text" id="string" placeholder="Input string" name="string">
+        </div>
+        <label for="types">Select charset or several charsets:</label>
+        <select name="types" id="types" multiple>
+            <option value="utf-8">UTF-8</option>
+            <option value="iso-8859-1">ISO-8859-1</option>
+            <option value="windows-1252">Windows-1252</option>
+        </select>
+        <button type="submit">Change charset</button>
+        <button type="reset">Clear</button>
+    </form>
+    <div id="output">
+        <div id="input-string-box">
+            <label for="input-string">Input string:</label>
+            <textarea name="input-string" id="input-string" cols="30" rows="2"></textarea>
+        </div>
+        <div id="utf-8-box">
+            <label for="utf-8">UTF-8:</label>
+            <textarea name="utf-8" id="utf-8" cols="30" rows="2"></textarea>
+        </div>
+        <div id="iso-box">
+            <label for="iso">ISO-8859-1:</label>
+            <textarea name="iso" id="iso" cols="30" rows="2"></textarea>
+        </div>
+        <div id="win-box">
+            <label for="win">Input string:</label>
+            <textarea name="win" id="win" cols="30" rows="2"></textarea>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

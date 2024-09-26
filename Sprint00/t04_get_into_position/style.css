@@ -1,0 +1,13 @@
+h1 {
+    text-align: center;
+    background-color: red;
+}
+
+span {
+    display: block;
+    color: #fff;
+    font-family: Arial, serif;
+    font-size: 4em;
+    font-weight: bold;
+    transform: translateY(30px);
+}

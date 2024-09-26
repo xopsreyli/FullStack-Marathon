@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #is-hacked,
+        #guess-form {
+            display: none;
+        }
+
+        .hacked {
+            color: green;
+            margin-bottom: 20px;
+        }
+
+        .not-hacked {
+            color: red;
+            margin-bottom: 20px;
+        }
+    </style>
+    <h1>Password</h1>
+    <p id="is-hacked"></p>
+    <p id="status">Password not saved at session.</p>
+    <form id="password-form">
+        <div>
+            <label for="password">Password for saving to session</label>
+            <input type="text" id="password" placeholder="Password to session" name="password">
+        </div>
+        <div>
+            <label for="salt">Salt for saving to session</label>
+            <input type="text" id="salt" placeholder="Salt to session" name="salt">
+        </div>
+        <button type="submit">Save</button>
+    </form>
+    <form id="guess-form">
+        <p id="hash">Hash is </p>
+        <label for="guess">Try to guess:</label>
+        <input type="text" id="guess" placeholder="Password to session">
+        <button type="submit">Check password</button>
+        <div>
+            <button type="reset">Clear</button>
+        </div>
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="link" href="/">Home</a>
+            <a class="link" href="/login" id="login">Login</a>
+            <a class="link" href="#" id="logout">Logout</a>
+        </nav>
+    </header>
+    <h1 class="title">Home page</h1>
+    <p class="role" id="role"></p>
+    <script>
+        const roleBox = document.getElementById('role')
+        const login = document.getElementById('login')
+        const logout = document.getElementById('logout')
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const user = JSON.parse(localStorage.getItem('user'))
+
+            login.style.display = user ? 'none' : 'block'
+            logout.style.display = user ? 'block' : 'none'
+
+            roleBox.textContent = user ? `Role: ${user.role}` : ''
+        })
+
+        logout.addEventListener('click', e => {
+            e.preventDefault()
+
+            localStorage.clear()
+            location.reload()
+        })
+    </script>
+</body>
+</html>

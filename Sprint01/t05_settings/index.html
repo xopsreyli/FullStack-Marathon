@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 class="title">Settings</h1>
+<div class="settings">
+    <form class="form">
+        <div class="form-section column-section">
+            <span class="form-section-title">Typeface</span>
+            <div class="form-section-content">
+                <select class="typeface-select" name="typeface" id="typeface">
+                    <option value="Acunim Pro">Acunim Pro</option>
+                    <option value="Comic Sans">Comic Sans</option>
+                    <option value="Times New Roman" disabled>Times New Roman</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-section row-section">
+            <div class="theme-mode-box">
+                <span class="form-section-title">Dark UI</span>
+                <div class="theme-mode">
+                    <input type="checkbox" id="theme-mode">
+                    <label class="ui-switch" for="theme-mode"></label>
+                </div>
+            </div>
+        </div>
+        <div class="form-section column-section">
+            <span class="form-section-title">Weight</span>
+            <div class="form-section-content">
+                <div class="weights">
+                    <input id="regular" type="radio" name="weight">
+                    <label class="weight-checkbox" for="regular"></label>
+                    <label class="weight-label" for="regular">Regular</label>
+                    <input id="bold" type="radio" name="weight">
+                    <label class="weight-checkbox" for="bold"></label>
+                    <label class="weight-label" for="bold">Bold</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-section column-section">
+            <span class="form-section-title">Color</span>
+            <div class="form-section-content colors">
+                <input id="blue" type="checkbox" name="color">
+                <label class="color-checkbox blue" for="blue"></label>
+                <input id="green" type="checkbox" name="color">
+                <label class="color-checkbox green" for="green"></label>
+                <input id="pink" type="checkbox" name="color">
+                <label class="color-checkbox pink" for="pink"></label>
+                <input id="yellow" type="checkbox" name="color">
+                <label class="color-checkbox yellow" for="yellow"></label>
+                <input id="orange" type="checkbox" name="color">
+                <label class="color-checkbox orange" for="orange"></label>
+            </div>
+        </div>
+        <div class="form-section column-section">
+            <span class="form-section-title">Size</span>
+            <div class="form-section-content">
+                <input id="font-range" class="size-range" type="range" min="16" max="26" value="20">
+                <label class="font-range-label" for="font-range">
+                    <span style="font-size: 16px">A</span>
+                    <span style="font-size: 26px">A</span>
+                </label>
+            </div>
+        </div>
+    </form>
+    <div class="menu">
+        <img class="menu-img" src="./assets/images/artistic-brush.png" alt="brush">
+        <img class="menu-img" src="./assets/images/user-icon.png" alt="user">
+        <img class="menu-img" src="./assets/images/sms-speech-bubble.png" alt="sms">
+        <img class="menu-img" src="./assets/images/computer-screen.png" alt="computer">
+    </div>
+</div>
+</body>
+</html>

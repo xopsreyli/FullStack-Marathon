@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="#">OSCORP</a>
+        <div class="header-menu-box">
+            <nav class="header-nav">
+                <a class="header-nav-link" href="#">Catalog</a>
+                <a class="header-nav-link" href="#">About</a>
+                <a class="header-nav-link" href="#">Service</a>
+                <a class="header-nav-link" href="#">Contact</a>
+            </nav>
+            <div class="header-search-box">
+                <input class="header-search" type="text" placeholder="Search">
+            </div>
+            <div class="header-phone-box">
+                <span>Phone:</span>
+                <a href="tel:+380686666666">+380686666666</a>
+            </div>
+        </div>
+    </header>
+    <div class="breadcrumbs">
+        <span class="breadcrumbs-rel">Home</span>
+        <span>/</span>
+        <span>Catalog</span>
+    </div>
+    <h1 class="title">Catalog</h1>
+    <div class="selected-filters">
+        <span class="selected-filter">Running</span>
+        <span class="selected-filter">Daily</span>
+        <span class="selected-filter">Football</span>
+    </div>
+    <div class="catalogue-section">
+        <form class="filter-menu">
+            <span class="filter-section-title"><span style="color: lightgreen">Durability</span> Rating</span>
+            <div class="checkboxes-box">
+                <div class="checkbox-box">
+                    <input id="unreliable" type="checkbox">
+                    <label class="" for="unreliable">Unreliable</label>
+                </div>
+                <div class="checkbox-box">
+                    <input id="fair" type="checkbox">
+                    <label for="fair">Fair</label>
+                </div>
+                <div class="checkbox-box">
+                    <input id="average" type="checkbox">
+                    <label for="average">Average</label>
+                </div>
+                <div class="checkbox-box">
+                    <input id="durable" type="checkbox">
+                    <label for="durable">Durable</label>
+                </div>
+                <div class="checkbox-box">
+                    <input id="very-durable" type="checkbox">
+                    <label for="very-durable">Very Durable</label>
+                </div>
+            </div>
+
+            <span class="filter-section-title">Price</span>
+            <input class="price-range" id="price-range" type="range" min="0" max="1000" value="500">
+            <label class="price-range-label" for="price-range">
+                <span>0</span>
+                <span>1000</span>
+            </label>
+        </form>
+        <div class="catalog">
+            <div class="catalog-box">
+                <a class="card" href="card.html">
+                    <div class="card-img-box">
+                        <img class="card-img" src="./assets/images/celox.png" alt="adidas celox">
+                    </div>
+                    <div class="card-info-box">
+                        <h2 class="card-title">Adidas Ozweego Celox</h2>
+                        <span class="card-price">120$</span>
+                        <span class="card-availability available">available</span>
+                        <button class="card-buy-btn card-buy-btn-a">buy</button>
+                    </div>
+                </a>
+                <a class="card" href="card.html">
+                    <div class="card-img-box">
+                        <img class="card-img" src="./assets/images/force1.png" alt="nike air force">
+                    </div>
+                    <div class="card-info-box">
+                        <h2 class="card-title">Nike Air Force 1</h2>
+                        <span class="card-price">80$</span>
+                        <span class="card-availability unavailable">not available</span>
+                        <button class="card-buy-btn card-buy-btn-d">buy</button>
+                    </div>
+                </a>
+                <a class="card" href="card.html">
+                    <div class="card-img-box">
+                        <img class="card-img" src="./assets/images/rs-x3.jpg" alt="puma rs-x3">
+                    </div>
+                    <div class="card-info-box">
+                        <h2 class="card-title">Puma rs-x3</h2>
+                        <span class="card-price">60$</span>
+                        <span class="card-availability unavailable">available</span>
+                        <button class="card-buy-btn card-buy-btn-d">buy</button>
+                    </div>
+                </a>
+                <a class="card" href="card.html">
+                    <div class="card-img-box">
+                        <img class="card-img" src="./assets/images/jordan1.png" alt="nike air jordan">
+                    </div>
+                    <div class="card-info-box">
+                        <h2 class="card-title">Nike Air Jordan 1</h2>
+                        <span class="card-price">210$</span>
+                        <span class="card-availability available">available</span>
+                        <button class="card-buy-btn card-buy-btn-a">buy</button>
+                    </div>
+                </a>
+            </div>
+            <div class="pagination">
+                <a class="pagination-item pagination-item-picked" href="#">1</a>
+                <a class="pagination-item" href="#">2</a>
+                <a class="pagination-item" href="#">3</a>
+                <a class="pagination-item" href="#">4</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="footer-copyrights">Copyright © 2013 | OSCORP | All rights reserved</p>
+        <nav class="footer-nav">
+            <a class="footer-nav-link" href="#">Terms of Service</a>
+            <span style="color: #333; font-size: 18px">|</span>
+            <a class="footer-nav-link" href="#">Privacy Policy</a>
+        </nav>
+    </footer>
+</body>
+</html>

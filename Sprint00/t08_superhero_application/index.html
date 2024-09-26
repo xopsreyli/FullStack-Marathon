@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Superhero Form</h1>
+  <form>
+    <div class="section">
+      <div>
+        <span class="section-label">About the Superhero</span>
+        <label for="name">Real Name</label>
+        <input id="name" type="text" placeholder="Superhero real name" required autofocus>
+        <label for="alias">Superhero Name</label>
+        <input id="alias" type="text" placeholder="Superhero alias">
+        <label for="age">Age</label>
+        <input class="age-input" id="age" type="number" min="1" max="999" step="1">
+      </div>
+      <div>
+        <label for="about">About</label>
+        <textarea id="about" rows="5" cols="70" placeholder="Information about the superhero, max 500 symbols" maxlength="500"></textarea>
+      </div>
+      <div>
+        <label for="photo">Photo:</label>
+        <input id="photo" type="file">
+      </div>
+    </div>
+    <div class="section">
+      <span class="section-label">Powers</span>
+      <div>
+        <input id="telekinesis" type="checkbox" name="powers" value="telekinesis">
+        <label for="telekinesis">Telekinesis</label>
+        <input id="sss" type="checkbox" name="powers" value="super strength or speed">
+        <label for="sss">Super strength or speed</label>
+        <input id="shapeshifting" type="checkbox" name="powers" value="shapeshifting">
+        <label for="shapeshifting">Shapeshifting</label>
+        <input id="flight" type="checkbox" name="powers" value="flight">
+        <label for="flight">Flight</label>
+        <input id="el-control" type="checkbox" name="powers" value="el-control">
+        <label for="el-control">Elemental control</label>
+        <input id="other-power" type="checkbox" name="powers" value="other-power">
+        <label for="other-power">Other</label>
+      </div>
+      <div>
+        <label for="level-of-control">Level of control:</label>
+        <input id="level-of-control" type="range" min="0" max="10" step="1" value="1">
+      </div>
+    </div>
+    <div class="section">
+      <span class="section-label">Origin of Powers</span>
+      <div>
+        <input id="unknown" type="radio" name="origin-of-powers" value="unknown">
+        <label for="unknown">Unknown</label>
+        <input id="freak-lab-accident" type="radio" name="origin-of-powers" value="freak-lab-accident">
+        <label for="freak-lab-accident">Freak lab accident</label>
+        <input id="cbaawb" type="radio" name="origin-of-powers" value="cbaawb">
+        <label for="cbaawb">Chosen by an ancient wise being</label>
+        <input id="tsinh" type="radio" name="origin-of-powers" value="tsinh">
+        <label for="tsinh">The superhero is not human</label>
+        <input id="other-op" type="radio" name="origin-of-powers" value="other-op">
+        <label for="other-op">Other</label>
+      </div>
+    </div>
+    <div class="form-btns">
+      <button class="form-btn" type="reset">clear</button>
+      <button class="form-btn" type="submit">send</button>
+    </div>
+  </form>
+</body>
+</html>

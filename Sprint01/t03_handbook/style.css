@@ -1,0 +1,87 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0 40px;
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    color: blueviolet;
+    margin: 40px 0;
+}
+
+.section-title {
+    text-transform: uppercase;
+    text-align: center;
+    color: blueviolet;
+    margin: 20px 0;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    background-color: blueviolet;
+    border-radius: 20px;
+    box-shadow: 0 0 20px silver;
+    padding: 40px 20px;
+}
+
+.card-title,
+.card-desc,
+.card-code,
+.card-example {
+    color: #fff;
+}
+
+.card-desc {
+    margin-bottom: 40px;
+}
+
+.protocols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.protocols-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    border: 2px solid blueviolet;
+    border-radius: 20px;
+    padding: 40px 20px;
+}
+
+.protocols-title,
+.protocols-desc {
+    color: blueviolet;
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .protocols {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .section {
+        grid-template-columns: 1fr;
+    }
+}

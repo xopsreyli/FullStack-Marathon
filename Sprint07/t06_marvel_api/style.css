@@ -1,0 +1,31 @@
+* {
+    font-family: sans-serif;
+}
+
+.box {
+    border: 1px solid lightgreen;
+    background-color: #333;
+    padding: 20px;
+    margin-bottom: 8px;
+}
+
+.obj-box {
+    border: 1px solid lightgreen;
+    background-color: #666;
+    padding: 20px;
+    margin-bottom: 8px;
+}
+
+.obj-key {
+    display: block;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.key {
+    color: lightgreen;
+}
+
+.value {
+    color: #fff;
+}

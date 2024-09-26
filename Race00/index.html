@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 class="title">Calculator</h1>
+    <div class="calc-box">
+        <div class="display">
+            <div class="history-box">
+                <div class="history"></div>
+            </div>
+            <div class="output">0</div>
+        </div>
+        <div class="keyboard">
+            <button class="btn" onclick="getFactorial()">x!</button>
+            <button class="btn" onclick="getRoot()">√x</button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn" onclick="clearOutput()">C</button>
+            <button class="btn" onclick="mulByMinusOne()">+/-</button>
+            <button class="btn" onclick="getPercent()">%</button>
+            <button class="btn" onclick="setOperation('/')">÷</button>
+            <button class="btn" onclick="append(7)">7</button>
+            <button class="btn" onclick="append(8)">8</button>
+            <button class="btn" onclick="append(9)">9</button>
+            <button class="btn" onclick="setOperation('*')">×</button>
+            <button class="btn" onclick="append(4)">4</button>
+            <button class="btn" onclick="append(5)">5</button>
+            <button class="btn" onclick="append(6)">6</button>
+            <button class="btn" onclick="setOperation('+')">+</button>
+            <button class="btn" onclick="append(1)">1</button>
+            <button class="btn" onclick="append(2)">2</button>
+            <button class="btn" onclick="append(3)">3</button>
+            <button class="btn" onclick="setOperation('-')">-</button>
+            <button class="btn" onclick="append(0)">0</button>
+            <button class="btn" onclick="append('.')">.</button>
+            <button class="equal-btn" onclick="showResult()">=</button>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

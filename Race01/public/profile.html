@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="./stylesheets/profile.css">
+</head>
+<body>
+    <header>
+        <a href="/" class="logo"><span style="color: lightskyblue">UCODE</span> Card Game</a>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/registration" id="registrationLink">Sign up</a>
+            <a href="/login" id="loginLink">Log in</a>
+            <a href="#" id="logoutLink">Log out</a>
+            <a href="/profile" class="profile" id="profileLink">
+                <span id="userLogin"></span>
+                <div class="profile-avatar">
+                    <img id="userAvatar" alt="user avatar">
+                </div>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div class="profile-header">
+            <div class="profile-avatar-box">
+                <img class="avatar" id="profileAvatar" alt="User avatar" src="./images/avatars/default.svg">
+            </div>
+            <span class="profile-login" id="profileLogin"></span>
+            <form class="form" id="avatarForm" enctype="multipart/form-data">
+                <label for="avatarInput" id="change-avatar-btn">Change Avatar</label>
+                <input type="file" id="avatarInput" name="avatar" accept="image/*" style="display: none;">
+            </form>
+        </div>
+    </main>
+    <script src="./javascripts/header.js" type="module"></script>
+    <script src="./javascripts/profile.js" type="module"></script>
+</body>
+</html>

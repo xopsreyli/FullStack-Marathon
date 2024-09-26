@@ -1,0 +1,24 @@
+.percha-img {
+    height: 200px;
+}
+
+.percha-img:hover ~ .men-box .row:nth-child(2n - 1) .man-img:nth-child(2n - 1),
+.percha-img:hover ~ .men-box .row:nth-child(2n) .man-img:nth-child(2n) {
+    opacity: 0;
+}
+
+.men-box {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+.man-img {
+    width: 100px;
+    transition: .5s linear;
+}

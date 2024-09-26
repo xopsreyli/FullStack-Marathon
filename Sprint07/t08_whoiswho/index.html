@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+
+    <h1>Parsing CSV data</h1>
+    <span>Upload file: </span>
+    <input type="file" id="fileInput" accept=".csv">
+    <button onclick="uploadFile()">Upload</button>
+    <br><br>
+    <div id="filterSection" style="display:none;">
+        <label for="column">Filter:</label>
+        <select id="column"></select>
+        <input type="text" id="filterValue">
+        <button onclick="applyFilter()">Apply</button>
+    </div>
+    <table id="csvTable"></table>
+    <script src='./script.js'></script>
+</body>
+</html>

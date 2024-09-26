@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+form {
+    width: 100%;
+    display: flex;
+}
+
+input {
+    flex: 1;
+}
+
+button {
+    text-transform: uppercase;
+}
+
+.text {
+    cursor: pointer;
+    height: 2em;
+    color: green;
+    padding: 0 10px;
+}
+
+.text:hover {
+    color: red;
+}

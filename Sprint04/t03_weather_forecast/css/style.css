@@ -1,0 +1,65 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.weather-box {
+    width: 800px;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 0 20px #333;
+    overflow: hidden;
+    margin: 40px auto 0;
+}
+
+.city {
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: dodgerblue;
+    padding: 12px 0;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    width: 100px;
+}
+
+.date-box {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid dodgerblue;
+    padding: 8px 0;
+}
+
+.date {
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.img-box {
+    padding: 20px 0;
+}
+
+.img-box img {
+    width: 100%;
+}
+
+.temp-box {
+    display: flex;
+    justify-content: center;
+}
+
+.temp {
+    color: #333;
+    font-size: 18px;
+}

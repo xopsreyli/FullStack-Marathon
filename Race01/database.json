@@ -1,0 +1,10 @@
+{
+  "dev": {
+    "driver": "mysql",
+    "user": "ucode_user",
+    "password": "ucode1234",
+    "host": "db",
+    "database": "ucode_race01",
+    "port": 3306
+  }
+}

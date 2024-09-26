@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.page-title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.box {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    background-color: #eee;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.menu {
+    width: 280px;
+    border-right: 2px solid #fff;
+}
+
+.menu-item {
+    cursor: pointer;
+    text-align: center;
+    padding: 16px 0;
+    transition: .2s linear;
+}
+
+.menu-item:hover {
+    background-color: #ddd;
+}
+
+.menu-item-text {
+    color: #333;
+    font-size: 28px;
+}
+
+.menu-item-active {
+    border-left: 4px solid dodgerblue;
+}
+
+.movie-box {
+    display: flex;
+    gap: 40px;
+    width: calc(100% - 280px);
+    padding-left: 40px;
+}
+
+.movie-info {
+    width: calc(100% - 300px);
+    padding-top: 40px;
+}
+
+.movie-title {
+    margin-bottom: 8px;
+}
+
+.cast {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.cast-card {
+    background-color: dodgerblue;
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+.cast-card-text {
+    color: #fff;
+}
+
+.movie-desc {
+    font-size: 18px;
+}
+
+.img-box {
+    width: 300px;
+    border-radius: 0 8px 8px 0;
+    line-height: 0;
+    overflow: hidden;
+}
+
+.img {
+    width: 100%;
+}

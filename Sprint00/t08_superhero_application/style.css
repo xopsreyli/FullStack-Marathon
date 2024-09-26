@@ -1,0 +1,33 @@
+form {
+    border: 2px solid grey;
+    padding: 20px;
+}
+
+.section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid grey;
+    padding: 20px 12px;
+    margin-bottom: 10px;
+}
+
+.section-label {
+    position: absolute;
+    left: 12px;
+    top: -10px;
+    background-color: #fff;
+}
+
+.age-input {
+    width: 36px;
+}
+
+.form-btns {
+    margin: 20px 0;
+}
+
+.form-btn {
+    text-transform: uppercase;
+}

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arena</title>
+    <link rel="stylesheet" href="./stylesheets/arena.css">
+</head>
+<body>
+<div class="arena-aside">
+    <div class="deck-of-cards" id="deckOfCards"></div>
+</div>
+<div class="arena-box">
+    <div class="player-box" id="player-box-upper">
+        <div style="width: 26px"></div>
+        <div class="player-cards player-cards-reverse" id="opponentCards">
+        </div>
+        <div class="player" id="opponentCard">
+            <div class="player-info">
+                <img class="player-avatar" id="opponentAvatar" src="./images/avatars/default.svg" alt="">
+                <span class="player-hp" id="opponentHP"></span>
+            </div>
+            <span class="player-name" id="opponentName">xopsreyli</span>
+        </div>
+    </div>
+    <div class="arena">
+        <div class="arena-cards" id="opponentActiveCards"></div>
+        <div class="arena-line">
+            <div class="arena-line-track" id="lineTimer"></div>
+        </div>
+        <div class="arena-cards" id="playerActiveCards"></div>
+    </div>
+    <div class="player-box" id="player-box-lower">
+        <div class="player">
+            <div class="player-info">
+                <img class="player-avatar" id="playerAvatar" alt="">
+                <span class="player-hp" id="playerHP"></span>
+            </div>
+            <span class="player-name" id="playerName"></span>
+        </div>
+        <div class="player-cards" id="myCards"></div>
+        <div class="mana-box">
+            <span class="mana-number" id="playerMana"></span>
+            <div class="mana" id="mana"></div>
+        </div>
+    </div>
+</div>
+<div class="arena-aside">
+    <div class="timer-box" id="timer">30</div>
+</div>
+<button class="give-up" id="giveUp">Give up</button>
+<div class="game-result-box" id="gameResultBox">
+    <span class="game-result" id="gameResult"></span>
+    <span class="game-result-message" id="gameResultMessage"></span>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="./javascripts/arena.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+USE ucode_web;
+
+ALTER TABLE users
+ADD role ENUM('USER', 'ADMIN') NOT NULL DEFAULT 'USER';

@@ -1,0 +1,66 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-header {
+    background-color: #000;
+}
+
+.table-header-cl-name {
+    color: #fff;
+    padding: 0;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: royalblue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+}
+
+.purple {
+    background-color: mediumpurple;
+}
+
+td {
+    text-align: center;
+    border: 2px solid lightgrey;
+}
+
+.stone-name {
+    width: 70px;
+}
+
+.stone-color {
+    width: 70px;
+}
+
+.image-cell {
+    width: 140px;
+    height: 140px;
+}
+
+.stone-img {
+    height: 120px;
+    width: 120px;
+    border-radius: 30px;
+}
+
+.table-footer-box {
+    text-align: center;
+    padding: 10px 0;
+}

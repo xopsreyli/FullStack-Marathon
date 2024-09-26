@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">handbook</h1>
+    <h2 class="section-title">html</h2>
+    <div class="section">
+        <div class="card">
+            <h3 class="card-title">button</h3>
+            <p class="card-desc">Clickable button.</p>
+            <code class="card-code">&lt;button&gt;Button&lt;/button&gt;</code>
+            <div class="card-example">
+                <button>Button</button>
+            </div>
+        </div>
+        <div class="card">
+            <h3 class="card-title">Headers</h3>
+            <p class="card-desc">The h1 to h6 tags are used to define HTML headings.</p>
+            <code class="card-code">&lt;h1&gt;Title&lt;/h1&gt;</code>
+            <div class="card-example">
+                <h1>Title</h1>
+            </div>
+        </div>
+        <div class="card">
+            <h3 class="card-title">hr</h3>
+            <p class="card-desc">Draws a horizontal line.</p>
+            <code class="card-code">&lt;hr&gt;</code>
+            <div class="card-example">
+                <hr>
+            </div>
+        </div>
+        <div class="card">
+            <h3 class="card-title">Link</h3>
+            <p class="card-desc">Element establishes a hyperlink to go to a specific location on a page or to another page
+                on the Internet.</p>
+            <code class="card-code">&lt;a href="#"&gt;link&lt;a&gt;</code>
+            <div class="card-example">
+                <a href="#">link</a>
+            </div>
+        </div>
+    </div>
+    <h2 class="section-title">css</h2>
+    <div class="section">
+        <div class="card">
+            <h3 class="card-title">Font-size</h3>
+            <p class="card-desc">Specifies the font size of the item. <br> %, px, rem, inherit</p>
+            <code class="card-code">font-size: 24px;</code>
+            <div class="card-example">
+                <span style="font-size: 24px">Text with font-size 24px</span>
+            </div>
+        </div>
+        <div class="card">
+            <h3 class="card-title">Border</h3>
+            <p class="card-desc">Specifies the style of the outline.</p>
+            <code class="card-code">border: 4px dashed green;</code>
+            <div class="card-example">
+                <div style="width: 80px; height: 40px; border: 4px dashed green;"></div>
+            </div>
+        </div>
+        <div class="card">
+            <h3 class="card-title">Border radius</h3>
+            <p class="card-desc">Rounds the edges. <br> %, px</p>
+            <code class="card-code">border-radius: 20px 0 5px 40px;</code>
+            <div class="card-example">
+                <div style="width: 80px; height: 40px; border: 2px solid #fff; border-radius: 20px 0 5px 40px;"></div>
+            </div>
+        </div>
+        <div class="card">
+            <h3 class="card-title">Opacity</h3>
+            <p class="card-desc">Specifies the opacity/transparency of an element.</p>
+            <code class="card-code">opacity: .8;</code>
+            <div class="card-example">
+                <div style="width: 40px; height: 20px; background-color: #fff; opacity: .8;"></div>
+                <div style="width: 40px; height: 20px; background-color: #fff; opacity: .6;"></div>
+                <div style="width: 40px; height: 20px; background-color: #fff; opacity: .4;"></div>
+                <div style="width: 40px; height: 20px; background-color: #fff; opacity: .2;"></div>
+            </div>
+        </div>
+    </div>
+    <h2 class="section-title">protocols</h2>
+    <div class="protocols">
+        <div class="protocols-card">
+            <h3 class="protocols-title">HTTP methods</h3>
+            <p class="protocols-desc">GET - use this type of requests to retrieve resource
+                representation/information only - and not to modify it in any
+                way</p>
+            <p class="protocols-desc">POST - used to create a new resource into the collection of
+                resources</p>
+            <p class="protocols-desc">PUT - use it primarily to update existing resource (if the resource
+                does not exist then API may decide to create a new resource or
+                not)</p>
+            <p class="protocols-desc">DELETE - used to delete resources (identified by the Request-URI)</p>
+            <p class="protocols-desc">PATCH - HTTP PATCH requests are to make partial update on a
+                resource</p>
+        </div>
+        <div class="protocols-card">
+            <h3 class="protocols-title">HTTP status code</h3>
+            <p class="protocols-desc">1xx: Informational <br>
+                example: 100 Continue</p>
+            <p class="protocols-desc">2xx: Success <br>
+                example: 201 Created</p>
+            <p class="protocols-desc">3xx: Redirection <br>
+                example: 301 Moved Permanently</p>
+            <p class="protocols-desc">4xx: Client Error <br>
+                example: 404 Not Found</p>
+            <p class="protocols-desc">5xx: Server Error <br>
+                example: 500 Internal Server Error</p>
+        </div>
+        <div class="protocols-card">
+            <h3 class="protocols-title">DNS list by types</h3>
+            <p class="protocols-desc">A - (address record) - specifies IP address (IPv4) for given host. A
+                records are used for conversion of domain names to
+                corresponding IP addresses</p>
+            <p class="protocols-desc">AAAA (TPVG address record)-specifies IPv6 address for given
+                host. So it works the same way as the A record and the
+                difference is the type of IP address</p>
+            <p class="protocols-desc">CNAME (canonical name record) - specifies a domain name that
+                has to be queried in order to resolve the original DNS query.
+                Therefore CNAME records are used for creating aliases of
+                domain names. CNAME records are truly useful when we want
+                to alias our domain to an external domain. In other cases we can
+                remove CNAME records and replace them with A records and
+                even decrease performance overhead.</p>
+            <p class="protocols-desc">HINFO (Host Information records) - used to acquire general
+                information about a host. The record specifies type of CPU and
+                08. The HINFO record data provides the possibility to use
+                operating system specific protocols when two hosts want to
+                communicate. For security reasons the HINFO records are not
+                typically used on public servers</p>
+            <p class="protocols-desc">ISDN (Integrated Services Digital Network records) - specifies
+                ISDN address for a host. An ISDN address is a telephone number
+                that consists of a country code, a national destination code, a
+                ISDN Subscriber number and, optionally, a ISDN subaddress. The
+                function of the record is only variation of the A resource record
+                function</p>
+            <p class="protocols-desc">MX (Mail exchanger record) - specifies a mail exchange server
+                for a DNS domain name. The information is used by Simple Mail
+                Transfer Protocol (SMTP) to route emails to proper hosts.
+                Typically, there are more than one mail exchange server for a
+                DNS domain and each of them have set priority
+                NS (name server) - specifies an authoritative name server for
+                given host</p>
+            <p class="protocols-desc">NS (name server) - specifies an authoritative name server for
+                given host</p>
+            <p class="protocols-desc">PTR (Reverse-lookup Pointer records) - As opposed to forward
+                DNS resolution (A and AAAA DNS records), the PTR record is
+                used to look up domain names based on an IP address</p>
+            <p class="protocols-desc">SOA (Start of Authority records) - The record specifies core
+                information about a DNS zone, including the primary name
+                server, the email of the domain administrator, the domain serial
+                number, and several timers relating to refreshing the zone</p>
+            <p class="protocols-desc">TXT (Text records) - The text record can hold arbitrary non-
+                formatted text string. Typically, the record is used by Sender
+                Policy Framework (SPF) to prevent fake emails to appear to be
+                sent by you</p>
+        </div>
+        <div class="protocols-card">
+            <h3 class="protocols-title">Identifying google's IP</h3>
+            <p class="protocols-desc">To identify google.com IP, follow the next steps:</p>
+            <p class="protocols-desc">1. open Terminal</p>
+            <p class="protocols-desc">2. paste and run the command nslookup google.com</p>
+            <p class="protocols-desc">As result, you will receive "name" and "address": <br>
+                Name: google.com.ua <br>
+                Address: 216.58.215.99 <br>
+                Repeat steps 1 and 2 to identify google.com.ua IP</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    * {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    }
+
+    body {
+    padding: 20px;
+    }
+
+    .title {
+    margin-bottom: 40px;
+    }
+
+    form {
+    border: 1px solid #000;
+    padding: 40px;
+    }
+
+    .form-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid #000;
+    padding: 20px;
+    margin-bottom: 20px;
+    }
+
+    .form-title {
+    position: absolute;
+    left: 20px;
+    top: -10px;
+    background-color: #fff;
+    }
+
+</style>
+    <h1 class="title">Session for new</h1>
+    <form id="hero-form">
+        <div class="form-box">
+            <span class="form-title">About HERO</span>
+            <div>
+                <label for="name">Real Name</label>
+                <input type="text" id="name" name="name" placeholder="Tell your name" required>
+                <label for="alias">Current alias</label>
+                <input type="text" id="alias" name="alias" placeholder="Tell your alias" required>
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div>
+                <label for="about">About</label>
+                <textarea name="about" id="about" cols="80" rows="7" maxlength="500" required></textarea>
+            </div>
+            <div>
+                <label for="photo">Your photo:</label>
+                <input type="file" id="photo" name="photo" required>
+            </div>
+        </div>
+        <div class="form-box">
+            <span class="form-title">Powers</span>
+            <div>
+                <input type="checkbox" id="strength" name="powers" value="strength">
+                <label for="strength">Strength</label>
+                <input type="checkbox" id="speed" name="powers" value="speed">
+                <label for="speed">Speed</label>
+                <input type="checkbox" id="intelligence" name="powers" value="intelligence">
+                <label for="intelligence">Intelligence</label>
+                <input type="checkbox" id="teleportation" name="powers" value="teleportation">
+                <label for="teleportation">Teleportation</label>
+                <input type="checkbox" id="immortal" name="powers" value="immortal">
+                <label for="immortal">Immortal</label>
+                <input type="checkbox" id="another" name="powers" value="another">
+                <label for="strength">Another</label>
+            </div>
+            <div>
+                <label for="level-of-control">Level of control:</label>
+                <input type="range" min="1" max="100" name="level-of-control" id="level-of-control">
+            </div>
+        </div>
+        <div class="form-box">
+            <span class="form-title">Publicity</span>
+            <div>
+                <input type="radio" name="publicity" value="unknown" id="unknown">
+                <label for="unknown">UNKNOWN</label>
+                <input type="radio" name="publicity" value="ghost" id="ghost">
+                <label for="ghost">LIKE A GHOST</label>
+                <input type="radio" name="publicity" value="in-comics" id="in-comics">
+                <label for="in-comics">I AM IN COMICS</label>
+                <input type="radio" name="publicity" value="fun-club" id="fun-club">
+                <label for="fun-club">I HAVE FUN CLUB</label>
+                <input type="radio" name="publicity" value="superstar" id="superstar">
+                <label for="superstar">SUPERSTAR</label>
+            </div>
+        </div>
+        <button type="reset">CLEAR</button>
+        <button type="submit">SEND</button>
+    </form>
+    <script src="./form.js"></script>
+</body>
+</html>
